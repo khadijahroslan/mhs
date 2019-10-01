@@ -1,24 +1,9 @@
 <div *ngIf="hero">
-  <h2>Residence {{hero.name | uppercase}} Details</h2>
+  <h2>{{hero.name | uppercase}} Details</h2>
   <div><span>id: </span>{{hero.id}}</div>
   <div>
-    <label>Name:
+    <label>name:
       <input [(ngModel)]="hero.name" placeholder="name"/>
-    </label>
-  </div>
-  <div>
-    <label>Type:
-      <input [(ngModel)]="hero.type" placeholder="type"/>
-    </label>
-  </div>
-  <div>
-    <label>Address:
-      <input [(ngModel)]="hero.address" placeholder="address"/>
-    </label>
-  </div>
-  <div>
-    <label>Quantity:
-      <input [(ngModel)]="hero.quantity" placeholder="quantity"/>
     </label>
   </div>
   <button (click)="goBack()">go back</button>
